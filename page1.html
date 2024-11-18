@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            place-items: center;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lamp">
+        <div id="string"></div>
+        <div id="lamp"></div>
+        <div id="light">
+            <div id="prop">
+                <H2>Kya apne kisise pyaar kiya?</H2>
+            </div>
+            <div id="options">
+                <div id="Yes">Haan</div>
+                <div id="No">Nahi</div>
+            </div>
+        </div>
+    </div>
+    <div id="op">
+        <div id="text">
+            <h3>Too dark right?</h3>
+            <p>(So is my life without you)</p>
+        </div>
+        <div id="switch">
+            <button>Turn on the light</button>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('switch').addEventListener('click', function () {
+        var lgt = document.getElementById('light');
+        var swch = document.getElementById('switch');
+        var txt = document.getElementById('text');
+        var pro = document.getElementById('prop');
+        var opt = document.getElementById('options');
+        lgt.style.display = 'flex';
+        prop.style.display = 'flex';
+        swch.style.display = 'none';
+        text.style.display = 'none';
+        opt.style.display = 'flex';
+    });
+    document.getElementById('Yes').addEventListener('click', function () {
+        var pro = document.getElementById('prop');
+        pro.style = 'display: flex; flex-direction: column; align-items: center;';
+        pro.innerHTML = '<H2>Maine bhi kiyaa</H2><br>Hihihihihi';
+        var opt = document.getElementById('options');
+        opt.style.display = 'none';
+        text.innerHTML = '<button style="border-radius: 7px; background-color: bisque; height: 5%; margin-top:0;"><a href="page2.html" style="text-decoration:none;">Dekho Wo kaun hai👉</a></button>'
+        text.style.display = 'block';
+        let opti = document.getElementById('op');
+        op.style.margin = '3vh';
+    });
+</script>
+
+</html>
